@@ -10,7 +10,7 @@ class postList extends Component {
 
 
     loadData = async () => {
-        fetch("http://localhost:9001/all")
+        fetch("http://localhost:9000/all")
             .then(res => res.text())
             .then(res => this.setState({ apiResponse: res }))
     };
@@ -21,7 +21,7 @@ class postList extends Component {
 
 
     render() {
-        const { posts } = this.state;
+        // const { posts } = this.state;
 
         return (
             <>
