@@ -14,7 +14,7 @@ class blogPost extends Component {
 
     loadData = async () => {
         const postId = this.props.match.params.post_id;
-        const url = `http://localhost:3001/post/${postId}`;
+        const url = `http://localhost:9000/post/${postId}`;
         const response = await fetch(url);
         const data = response.json();
         return data;
